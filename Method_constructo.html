@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Method constructor function
+        // karena dalam javascript, class adalah berbentuk function jadi secara default, function tersebut bisa memiliki parameter
+        //constructor function sama seperti function biasanya bisa memliki parameter hal ini membuat ketika kita membuat object  kita bisa mengirim lagsung data lewat parameter constructor function tersebut
+         function Person(firstame,lastName) {
+            this.firstName = firstame;
+            this.lastName = lastName;
+            this.sayHello = function(name) {
+                console.info(`Hello ${name}, my name is ${this.firstame}`);
+            }
+        }
+
+        const naim = new Person("Naim", "Septian");
+        naim.sayHello("John");
+
+        const nur  = new Person("Nur", "Aini");
+        nur.sayHello("Doe");
+
+        console.log(naim);
+        console.log(nur);
+    </script>
+</body>
+</html>

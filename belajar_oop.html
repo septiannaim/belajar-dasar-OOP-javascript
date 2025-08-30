@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+ <!--
+    Object in JavaScript
+    Apa itu Object Oriented Programming?
+    - Object Oriented Programming adalah sudut pandang pemrograman yang berkonsep "objek".
+
+    Apa itu Object?
+    - Object adalah data yang berisi fungsi dan variabel.
+
+    Apa itu Class?
+    - Class adalah blueprint atau cetak biru dari sebuah objek.
+    - Class mendefinisikan properti dan metode yang dimiliki oleh objek.
+    - Setiap Object selalu dibuat dari class
+    - dan sebuah class bisa membuat object tanpa batas
+
+    OOP dijavascript
+    - Javascript sendiri sejak awal dibuat dengan bahasa prosedural bukan bahasa pemrograman berorientasi objek
+-->
+<script>
+
+//Contoh penerapan Object dengan Object
+
+const naim = {
+ firstname: "Naim",
+ lastname: "Septian"
+};
+
+const budi = {
+ firstname: "Budi",
+ lastname: "Santoso"
+};
+
+//Constructor Function
+function Person() 
+{
+
+}
+
+//Contoh penerapan Object dengan Constructor Function
+const naim = new Person();
+const budi = new Person();
+
+
+//Property di Constructor Function
+function Person(firstname, lastname) {
+    this.firstname = ""
+    this.lastname =  ""
+}
+
+const naim = new Person();
+const budi = new Person(); 
+
+</script>
+</body>
+</html>
