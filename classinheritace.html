@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class inheritance</title>
+</head>
+<body>
+
+    <script>
+        class Employee {
+            sayHello(name) {
+                console.info(`Hello ${name}, my name is Employee ${this.name}`);
+            }
+        }
+
+        class Manager extends Employee {
+            sayHello(name) {
+                console.info(`Hello ${name}, my name is Manager ${this.name}`);
+            }
+        }
+
+        const naim = new Employee("Naim");
+        naim.name = "Naim";
+        naim.sayHello("Joko");
+
+        const wawa = new Manager("Wawa");
+        wawa.name = "Wawa";
+        wawa.sayHello("Joko");
+
+        console.info(naim);
+        console.info(wawa);
+    </script>
+
+    
+</body>
+</html>
