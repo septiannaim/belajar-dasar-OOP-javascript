@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //public artinya bisa diakses dari luar class dan private hanya bisa diakses dari dalam class saja
+        //untuk membuat public class field , kita bisa langsung buat nama field dengan value nya selevel method
+        //jika kita tidak memasukkan value ke dalam field tersebut, artinya field tersebut memiliki value undefined
+
+        class Customer 
+        {
+            firstname;
+            lastname;
+            balance = 0;
+
+            constructor(firstname, lastname){
+
+                this.firstname = firstname;
+                this.lastname = lastname;
+            }
+
+            sayHello(){
+
+            }
+        }
+
+        const naim = new Customer("Naim", "Anwar");
+        console.info(naim);
+    </script>
+</body>
+</html>

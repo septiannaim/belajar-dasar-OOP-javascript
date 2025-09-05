@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operator instance</title>
+</head>
+<body>
+    <script>
+
+        //operator instanceof mendukung class inheritance, artinya instanceof juga bisa digunakan untuk mengecek,
+        //apakah sebuah object adlah instance dari class tertntu, atau turunan dari class tertentu ?
+        
+         class Employee{
+
+         }
+
+         class Manager extends Employee{
+
+         }
+
+         const budi = new Employee();
+         const naim = new Manager();
+
+         console.info(typeof budi);
+         console.info(typeof naim);
+
+         console.info(budi instanceof Employee); //true
+         console.info(budi instanceof Manager); //false
+
+
+    console.info(naim instanceof Employee); //false
+    console.info(naim instanceof Manager); //true
+    
+    </script>
+</body>
+</html>
